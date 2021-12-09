@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:background="@color/colorMain"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            android:text="Chat Room"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+   <RelativeLayout
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="0dp">
+
+       <ListView
+           android:id="@+id/homeList"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+   </RelativeLayout>
+
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/create_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Create a new chat room"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:padding="15dp"/>
+</LinearLayout>

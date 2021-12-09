@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:background="@color/colorMain"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_finish"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_bac"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="Create a new chat room"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/create_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@mipmap/chatroom"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/create_btn"
+        android:textColor="#fff"
+        android:text="Create"
+        android:background="@drawable/button"
+        android:layout_height="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent" />
+</LinearLayout>
